@@ -8,6 +8,7 @@ import Navbar from "./components/navbar/Navbar";
 import Projects from "./components/projects/Projects";
 import Resume from "./components/resume/Resume";
 import Testimonial from "./components/tesimonial/Testimonial";
+import i18n from './assets/lang/i18n';
 
 function App() {
   return (

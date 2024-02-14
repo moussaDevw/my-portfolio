@@ -4,8 +4,12 @@ import Education from './Education';
 import Skills from './Skills';
 import Achievement from './Achievement';
 import Experience from "./Experience"
+import { useTranslation } from 'react-i18next';
 
 const Resume = () => {
+
+  const { t } = useTranslation()
+
    const [educationData, setEducationData] = useState(true);
    const [skillData, setSkillData] = useState(false);
    const [experienceData, setExperienceData] = useState(false);
@@ -30,7 +34,7 @@ const Resume = () => {
                 : "border-transparent"
             } resumeLi`}
           >
-            Education
+            {t('education')}
           </li>
           <li
             onClick={() =>

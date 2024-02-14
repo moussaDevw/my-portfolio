@@ -5,8 +5,15 @@ import { MdClose } from "react-icons/md";
 import { FaFacebookF, FaTwitter, FaLinkedinIn } from "react-icons/fa";
 import {logo} from "../../assets/index"
 import { navLinksdata } from '../../constants';
+import { useTranslation, Trans } from 'react-i18next';
 
 const Navbar = () => {
+  const { t, i18n } = useTranslation();
+  const lngs = {
+    en: { nativeName: 'English' },
+    fr: { nativeName: 'French' }
+  };
+
   const [showMenu, setShowMenu]=useState(false)
   return (
     <div className="w-full h-24 sticky top-0 z-50 bg-bodyColor mx-auto flex justify-between items-center font-titleFont border-b-[1px] border-b-gray-600">
@@ -14,6 +21,16 @@ const Navbar = () => {
         <img src={logo} alt="logo" />
       </div>
       <div>
+          {Object.keys(lngs).map((lng) => (
+            <button key={lng} style={{ fontWeight: i18n.resolvedLanguage === lng ? 'bold' : 'normal' }} type="submit" onClick={() => i18n.changeLanguage(lng)}>
+              {lngs[lng].nativeName}
+            </button>
+          ))}
+        </div>
+      <div>
+        {/* <Trans i18nKey="description.part1">
+            Edit <code>src/App.js</code> and save to reload.
+          </Trans> */}
         <ul className="hidden mdl:inline-flex items-center gap-6 lg:gap-10">
           {navLinksdata.map(({ _id, title, link }) => (
             <li

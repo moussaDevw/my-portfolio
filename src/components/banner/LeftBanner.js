@@ -2,8 +2,10 @@ import React from 'react'
 import { useTypewriter, Cursor } from "react-simple-typewriter";
 import { FaFacebookF, FaTwitter, FaLinkedinIn, FaReact } from "react-icons/fa";
 import { SiTailwindcss, SiFigma, SiNextdotjs } from "react-icons/si";
+import { Trans, useTranslation } from 'react-i18next';
 
 const LeftBanner = () => {
+  const { t } = useTranslation()
     const [text] = useTypewriter({
       words: ["Professional Coder.", "Full Stack Developer.", "UI Designer."],
       loop: true,
@@ -14,9 +16,12 @@ const LeftBanner = () => {
   return (
     <div className="w-full lgl:w-1/2 flex flex-col gap-20">
       <div className="flex flex-col gap-5">
-        <h4 className=" text-lg font-normal">WELCOME TO MY WORLD</h4>
+        <h4 className=" text-lg font-normal">{t('textWelcome')}</h4>
         <h1 className="text-6xl font-bold text-white">
-          Hi, I'm <span className="text-designColor capitalize">John doe</span>
+        {/* <Trans i18nKey="textWelcome">
+            Edit <code>src/App.js</code> and save to reload.
+          </Trans> */}
+          {t('hiIm')} <span className="text-designColor capitalize">Moussa Diagne</span>
         </h1>
         <h2 className="text-4xl font-bold text-white">
           a <span>{text}</span>

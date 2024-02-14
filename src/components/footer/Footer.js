@@ -1,8 +1,26 @@
 import React from 'react'
 import { FaFacebookF, FaTwitter, FaLinkedinIn } from "react-icons/fa";
 import {logo} from "../../assets/index"
+import { useTranslation } from 'react-i18next';
+import { DateTime } from 'luxon';
+
+const getGreetingTime = (d = DateTime.now()) => {
+	const split_afternoon = 12; // 24hr time to split the afternoon
+	const split_evening = 17; // 24hr time to split the evening
+	const currentHour = parseFloat(d.toFormat('hh'));
+	console.log(currentHour)
+	if (currentHour >= split_afternoon && currentHour <= split_evening) {
+		return 'afternoon';
+	} else if (currentHour >= split_evening) {
+		return 'evening';
+  }
+	return 'morning';
+}
 
 const Footer = () => {
+
+  const { t } = useTranslation()
+
   return (
     <div className="w-full py-20 h-auto border-b-[1px] border-b-black grid grid-cols-1 md:grid-cols-2 lgl:grid-cols-4 gap-8">
       <div className="w-full h-full flex flex-col gap-8">
@@ -130,6 +148,9 @@ const Footer = () => {
           </li>
         </ul>
       </div>
+      <div className="Footer">
+    <div>{t('footer.date', { date: new Date(), context: getGreetingTime() })}</div>
+  </div>
     </div>
   );
 }

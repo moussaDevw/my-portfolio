@@ -1,0 +1,11 @@
+{
+    "textWelcome": "WELCOME TO MY WORLD",
+    "desc": "Ce que je fais",
+    "hiIm": "Bonjour, Je suis",
+    "education": "Education",
+    "footer": {
+      "date_morning": "Bonjour ! Aujourd'hui, c'est {{date, DATE_HUGE}} | Bonne journée !",
+      "date_afternoon": "Bon après-midi! Aujourd'hui, c'est {{date, DATE_HUGE}}",
+      "date_evening": "Bonsoir à tous! Aujourd'hui, c'est le {{date, DATE_HUGE}}"
+    }
+  }
