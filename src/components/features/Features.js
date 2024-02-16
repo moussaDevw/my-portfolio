@@ -13,40 +13,40 @@ const Features = () => {
       id="features"
       className="w-full py-20 border-b-[1px] border-b-black"
     >
-      <Title title="Features" des={t('desc')} />
+      <Title title={t('features')} des={t('desc')} />
       <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 xl:gap-20">
         <Card
-          title="Business Stratagy"
-          des="Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque soluta
-          hic consequuntur eum repellendus ad."
-         
-        />
-        <Card
-          title="App Development"
+          title={t('appDevelopment')}
           des="Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque soluta
           hic consequuntur eum repellendus ad."
           icon={<AiFillAppstore />}
         />
         <Card
-          title="SEO Optimisation"
-          des="Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque soluta
-          hic consequuntur eum repellendus ad."
-          icon={<SiProgress />}
-        />
-        <Card
-          title="Mobile Development"
+          title={t('mobileDevelopment')}
           des="Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque soluta
           hic consequuntur eum repellendus ad."
           icon={<FaMobile />}
         />
         <Card
-          title="UX Design"
+          title={t('seoOptimisation')}
+          des="Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque soluta
+          hic consequuntur eum repellendus ad."
+          icon={<SiProgress />}
+        />
+        <Card
+          title={t('devops')}
           des="Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque soluta
           hic consequuntur eum repellendus ad."
           icon={<SiAntdesign />}
         />
         <Card
-          title="Hosting Websites"
+          title="Aws"
+          des="Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque soluta
+          hic consequuntur eum repellendus ad."
+         
+        />
+        <Card
+          title={t('hostingWebsites')}
           des="Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque soluta
           hic consequuntur eum repellendus ad."
           icon={<FaGlobe />}
