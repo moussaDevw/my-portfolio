@@ -1,7 +1,14 @@
 {
-    "textWelcome": "WELCOME TO MY WORLD",
+    "textWelcome": "BIENVENUE DANS MON MONDE",
     "desc": "Ce que je fais",
     "hiIm": "Bonjour, Je suis",
+    "catchphrase": "J'utilise l'animation comme une troisième dimension permettant de simplifier les expériences et de guider chaque interaction. De la même manière, en tant que développeur avec une expertise en DevOps et AWS, j'intègre des solutions dynamiques pour optimiser les processus et garantir des performances fluides et efficaces à chaque étape du développement.",
+    "findMeIn": "Retrouvez-moi sur",
+    "bestSkillOn": "MEILLEURE COMPÉTENCE SUR",
+    "professionalCoder": "Codeur professionnel.",
+    "fullStackDeveloper": "Développeur Full Stack.",
+    "juniorDevopsAndAws": "Junior Devops et Aws.",
+    "a": "un",
     "education": "Education",
     "footer": {
       "date_morning": "Bonjour ! Aujourd'hui, c'est {{date, DATE_HUGE}} | Bonne journée !",

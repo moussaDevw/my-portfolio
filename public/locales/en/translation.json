@@ -2,6 +2,13 @@
   "textWelcome": "WELCOME TO MY WORLD",
   "desc": "What I Doing",
   "hiIm": "Hi, I'm",
+  "catchphrase": "I use animation as a third dimension to simplify experiences and guide every interaction. Similarly, as a developer with expertise in DevOps and AWS, I integrate dynamic solutions to optimize processes and guarantee smooth, efficient performance at every stage of development.",
+  "findMeIn": "Find me in",
+  "bestSkillOn": "BEST SKILL ON",
+  "professionalCoder": "Professional Coder.",
+  "fullStackDeveloper":"Full Stack Developer.",
+  "juniorDevopsAndAws": "Junior Devops And Aws.",
+  "a": "a",
   "education": "Education",
   "footer": {
     "date": "Today is {{date, DATE_HUGE}}",
