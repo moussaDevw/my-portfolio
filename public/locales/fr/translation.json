@@ -1,4 +1,7 @@
 {
+    "Home": "Accueil",
+    "Projects": "Projets",
+    "Resume": "Curriculum vitae",
     "textWelcome": "BIENVENUE DANS MON MONDE",
     "desc": "Ce que je fais",
     "hiIm": "Bonjour, Je suis",
@@ -27,11 +30,16 @@
     "education": "Éducation",
     "professionalSkills": "Compétences professionnelles",
     "experience": "Expérience",
+    "jobExperience": "Expérience professionnelle",
+    "internshipExperience": "Expérience de stage",
+    "webDeveloper": "Développeur web",
     "achievements": "Réalisations",
     "contactWithMe": "Contactez-moi",
     "footer": {
       "date_morning": "Bonjour ! Aujourd'hui, c'est {{date, DATE_HUGE}} | Bonne journée !",
       "date_afternoon": "Bon après-midi! Aujourd'hui, c'est {{date, DATE_HUGE}}",
       "date_evening": "Bonsoir à tous! Aujourd'hui, c'est le {{date, DATE_HUGE}}"
-    }
+    },
+    "quickLink": "Lien rapide",
+    "copyRight": "Tous droits réservés par Moussa Diagne"
   }

@@ -10,10 +10,10 @@ const Features = () => {
   const { t } = useTranslation()
   return (
     <section
-      id="features"
+      id="services"
       className="w-full py-20 border-b-[1px] border-b-black"
     >
-      <Title title={t('features')} des={t('desc')} />
+      <Title title={t('Services')} des={t('desc')} />
       <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 xl:gap-20">
         <Card
           title={t('appDevelopment')}

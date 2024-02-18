@@ -1,8 +1,12 @@
 import React from "react";
 import { motion } from "framer-motion";
 import ResumeCard from "./ResumeCard";
+import { useTranslation } from "react-i18next";
 
 const Experience = () => {
+
+  const { t } = useTranslation()
+
   return (
     <motion.div
       initial={{ opacity: 0 }}
@@ -11,13 +15,13 @@ const Experience = () => {
     >
       <div>
         <div className="py-6 lgl:py-12 font-titleFont flex flex-col gap-4">
-          <p className="text-sm text-designColor tracking-[4px]">2010 - 2022</p>
-          <h2 className="text-3xl md:text-4xl font-bold">Job Experience</h2>
+          <p className="text-sm text-designColor tracking-[4px]">2019 - 2021</p>
+          <h2 className="text-3xl md:text-4xl font-bold">{t('internshipExperience')}</h2>
         </div>
         <div className="mt-6 lgl:mt-14 w-full h-[1000px] border-l-[6px] border-l-black border-opacity-30 flex flex-col gap-10">
           <ResumeCard
-            title="Sr. Software Engineer"
-            subTitle="Google Out Tech - (2017 - Present)"
+            title={t("webDeveloper")}
+            subTitle="Volkeno,Dakar - (01-03-2019 - 01-08-2019)"
             result="USA"
             des="Google's hiring process is an important part of our culture. Googlers care deeply about their teams and the people who make them up."
           />
@@ -36,9 +40,9 @@ const Experience = () => {
         </div>
       </div>
       <div>
-        <div className="py-6 lgl:py-12 font-titleFont flex flex-col gap-4">
-          <p className="text-sm text-designColor tracking-[4px]">2001 - 2020</p>
-          <h2 className="text-3xl md:text-4xl font-bold">Trainer Experience</h2>
+      <div className="py-6 lgl:py-12 font-titleFont flex flex-col gap-4">
+          <p className="text-sm text-designColor tracking-[4px]">2021 - 2024</p>
+          <h2 className="text-3xl md:text-4xl font-bold">{t('jobExperience')}</h2>
         </div>
         <div className="mt-6 lgl:mt-14 w-full h-[1000px] border-l-[6px] border-l-black border-opacity-30 flex flex-col gap-10">
           <ResumeCard
