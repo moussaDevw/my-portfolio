@@ -4,15 +4,14 @@ import { FiMenu } from "react-icons/fi";
 import { MdClose } from "react-icons/md";
 import { FaFacebookF, FaTwitter, FaLinkedinIn } from "react-icons/fa";
 import {logo} from "../../assets/index"
+import french from '../../assets/images/lng/france.png'
+import english from '../../assets/images/lng/united-states.png'
 import { navLinksdata } from '../../constants';
-import { useTranslation, Trans } from 'react-i18next';
+import { useTranslation } from 'react-i18next';
 
 const Navbar = () => {
-  const { t, i18n } = useTranslation();
-  const lngs = {
-    en: { nativeName: 'English' },
-    fr: { nativeName: 'French' }
-  };
+  const { i18n } = useTranslation();
+  const { t } = useTranslation()
 
   const [showMenu, setShowMenu]=useState(false)
   return (
@@ -21,12 +20,18 @@ const Navbar = () => {
         <img src={logo} alt="logo" />
       </div>
       <div>
-          {Object.keys(lngs).map((lng) => (
-            <button key={lng} style={{ fontWeight: i18n.resolvedLanguage === lng ? 'bold' : 'normal' }} type="submit" onClick={() => i18n.changeLanguage(lng)}>
-              {lngs[lng].nativeName}
-            </button>
-          ))}
+          {
+          // Object.keys(lngs).map((lng) => (
+          //   <button key={lng} style={{ fontWeight: i18n.resolvedLanguage === lng ? 'bold' : 'normal' }} type="submit" onClick={() => i18n.changeLanguage(lng)}>
+          //     {/* {lngs[lng].nativeName} */}
+              
+          //     {console.log(i18n.resolvedLanguage)}
+          //   </button>
+          // ))
+          }
+          {i18n.resolvedLanguage === 'fr' ? <img src={french} alt="Langue Français" height={20} width={20} style={{cursor:'pointer'}} onClick={() => i18n.changeLanguage('en')} /> : <img src={english} alt='Langue of english' height={20} width={20} style={{cursor:'pointer'}} onClick={() => i18n.changeLanguage('fr')} />}
         </div>
+        {/* <a href="https://www.flaticon.com/free-icons/united-states" title="united states icons">United states icons created by Freepik - Flaticon</a> */}
       <div>
         {/* <Trans i18nKey="description.part1">
             Edit <code>src/App.js</code> and save to reload.
@@ -89,7 +94,7 @@ const Navbar = () => {
               </ul>
               <div className="flex flex-col gap-4">
                 <h2 className="text-base uppercase font-titleFont mb-4">
-                  Find me in
+                  {t('findMeIn')}
                 </h2>
                 <div className="flex gap-4">
                   <span className="bannerIcon">
