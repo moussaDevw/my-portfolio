@@ -17,38 +17,32 @@ const Features = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 xl:gap-20">
         <Card
           title={t('appDevelopment')}
-          des="Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque soluta
-          hic consequuntur eum repellendus ad."
+          des={t('appDevelopmentDesc')}
           icon={<AiFillAppstore />}
         />
         <Card
           title={t('mobileDevelopment')}
-          des="Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque soluta
-          hic consequuntur eum repellendus ad."
+          des={t('mobileDevelopmentDesc')}
           icon={<FaMobile />}
         />
         <Card
           title={t('seoOptimisation')}
-          des="Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque soluta
-          hic consequuntur eum repellendus ad."
+          des={t('seoOptimisationDesc')}
           icon={<SiProgress />}
         />
         <Card
           title={t('devops')}
-          des="Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque soluta
-          hic consequuntur eum repellendus ad."
+          des={t('devopsDesc')}
           icon={<SiAntdesign />}
         />
         <Card
           title="Aws"
-          des="Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque soluta
-          hic consequuntur eum repellendus ad."
+          des={t('juniorDevopsAndAwsDesc')}
          
         />
         <Card
           title={t('hostingWebsites')}
-          des="Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque soluta
-          hic consequuntur eum repellendus ad."
+          des={t('hostingWebsitesDesc')}
           icon={<FaGlobe />}
         />
       </div>

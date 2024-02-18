@@ -23,7 +23,7 @@ const LeftBanner = () => {
           </Trans> */}
           {t('hiIm')} <span className="text-designColor capitalize">Moussa Diagne</span>
         </h1>
-        <h2 className="text-4xl font-bold text-white">
+        <h2 className="text-4xl font-bold text-white h-20 md:h-auto">
           <span>{text}</span>
           <Cursor
             cursorBlinking="false"
