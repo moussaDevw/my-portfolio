@@ -18,25 +18,43 @@ const Experience = () => {
           <p className="text-sm text-designColor tracking-[4px]">2021 - 2024</p>
           <h2 className="text-3xl md:text-4xl font-bold">{t('jobExperience')}</h2>
         </div>
-        <div className="mt-6 lgl:mt-14 w-full h-[1800px] border-l-[6px] border-l-black border-opacity-30 flex flex-col gap-10">
+        <div className="mt-6 lgl:mt-14 w-full h-auto border-l-[6px] border-l-black border-opacity-30 flex flex-col gap-10">
           <ResumeCard
             title={t("frontEndDeveloper")}
             subTitle={`Casacloud,Remote - (11-2022 - ${t('present')})`}
             result={`${t('senegal')},Dakar`}
-            des="Google's hiring process is an important part of our culture. Googlers care deeply about their teams and the people who make them up
-            Google's hiring process is an important part of our culture. Googlers care deeply about their teams and the people who make them up."
+            des={<div>
+              <ul>
+                <li>{t('casaDesc.0')}</li>
+                <br />
+                <li>{t('casaDesc.1')}</li>
+              </ul>
+            </div>}
           />
           <ResumeCard
             title={t("fullStackDeveloper")}
             subTitle="3W Agency - (11-2024 - 12-2024)"
             result={`${t('senegal')},Dakar`}
-            des="A popular destination with a growing number of highly qualified homegrown graduates, it's true that securing a role in Malaysia isn't easy."
+            des={<div>
+              <h1>{t('3wagencyDesc.0')} <a style={{color:"red"}} href="https://cigarworkshops.com/revamp/" target="_blank">cigarworkshops</a></h1>
+                <br />
+              <h1>{t('3wagencyDesc.1')} <a style={{color:"red"}} href="https://coris.bank/" target="_blank">coris bank</a></h1>
+              <br />
+              <ul>
+                <li>{t('3wagencyDesc.2')}</li>
+                <br />
+                <li>{t('3wagencyDesc.3')}</li>
+                <br />
+                <li>{t('3wagencyDesc.4')}</li>
+                <br />
+              </ul>
+            </div>}
           />
           <ResumeCard
             title={t("frontEndDeveloper")}
             subTitle="Medteck Consulting - (02-2022 - 01-2023)"
             result={`${t('senegal')},Dakar`}
-            des="The Oman economy has grown strongly over recent years, having transformed itself from a producer and innovation-based economy."
+            des={<h1>{t("medDesc")}  <a href="https://www.instagram.com/trytradeup/" target="_blank">Trytradeup.</a></h1>}
           />
           <ResumeCard
             title={t("web/mobileDeveloper")}
