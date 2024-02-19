@@ -42,7 +42,12 @@
     "senagricultureDesc": ["Développer des outils web & logiciels permettant de faciliter les opérations en interne de l’entreprise.", "Participer à la conception du graphisme & design des supports technologiques à développer Gérer et maintenir le site web et l’application mobile", "Assurer le suivi de maintenance opérationnelle sur les applications développée.", "Etablir un premier diagnostic en cas d’anomalie.", "Lancer l’exécution des taches d’exploitation et contrôler leur déroulement.", "Assurer la gestion de l’application mobile.", "Utiliser et développer les web services.", "Réaliser et automatiser les procédures d’exploitation de gestion et réaliser les interfaces graphiques."],
     "casaDesc": ["Développement et déploiement d'une plateforme de gestion de clients pour centraliser les informations et interactions avec la clientèle.", "Conception et développement d'une plateforme touristique permettant la réservation de vols et d'hôtels, intégrant l'API d'Amadeus pour accéder aux données de voyage en temps réel."],
     "volkenoDesc": ["Développement de sites web au Sénégal en utilisant HTML5 et CSS3 pour créer des interfaces modernes et réactives.", "Création d'un portfolio professionnel en utilisant WordPress pour mettre en valeur les compétences et les réalisations."],
+    "safDesc": "Développement d'une plateforme de covoiturage permettant aux utilisateurs de partager leurs trajets et de trouver des compagnons de voyage, intégrant des fonctionnalités telles que la recherche de trajets, la réservation de places, la gestion des paiements et les évaluations des utilisateurs.",
     "achievements": "Réalisations",
+    "university": "Université",
+    "levelStudent": "Licence Génie Informatique",
+    "selfTaught": "Autodidacte",
+    "online": "En Ligne",
     "contactWithMe": "Contactez-moi",
     "footer": {
       "date_morning": "Bonjour ! Aujourd'hui, c'est {{date, DATE_HUGE}} | Bonne journée !",

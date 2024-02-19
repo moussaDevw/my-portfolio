@@ -37,8 +37,13 @@
   "senagricultureDesc": ["Develop web & software tools to facilitate the company's internal operations.", "Participate in the graphic design of the technological supports to be developed Manage and maintain the website and mobile application.", "Monitor operational maintenance on applications developed.", "Etablir un premier diagnostic en cas d’anomalie.","Initiate the execution of operating tasks and monitor their progress.", "Manage the mobile application.", "Use and develop web services.", "Design and automate management operating procedures and create graphic interfaces."],
   "casaDesc": ["Development and deployment of a customer management platform to centralize customer information and interactions.", "Design and development of a tourism platform for booking flights and hotels, integrating the Amadeus API to access travel data in real time."],
   "volkenoDesc": ["Website development in Senegal using HTML5 and CSS3 to create modern, responsive interfaces.", "Creation of a professional portfolio using WordPress to showcase skills and achievements."],
+  "safDesc": "Development of a carpooling platform enabling users to share their journeys and find travel companions, integrating functionalities such as journey search, seat reservation, payment management and user reviews.",
   "internshipExperience": "Internship experience",
   "webDeveloper": "Web Developer",
+  "university": "University",
+  "levelStudent": "Bachelor's degree in computer engineering",
+  "selfTaught": "Self-taught",
+  "online": "Online",
   "achievements": "Achievements",
   "contactWithMe": "Contact With Me",
   "footer": {

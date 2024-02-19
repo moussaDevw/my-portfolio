@@ -64,7 +64,7 @@ const Resume = () => {
           >
             {t('experience')}
           </li>
-          <li
+          {/* <li
             onClick={() =>
               setEducationData(false) &
               setSkillData(false) &
@@ -78,7 +78,7 @@ const Resume = () => {
             } resumeLi`}
           >
             {t('achievements')}
-          </li>
+          </li> */}
         </ul>
       </div>
       {educationData && <Education />}

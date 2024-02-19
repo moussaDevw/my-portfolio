@@ -18,7 +18,7 @@ const Experience = () => {
           <p className="text-sm text-designColor tracking-[4px]">2021 - 2024</p>
           <h2 className="text-3xl md:text-4xl font-bold">{t('jobExperience')}</h2>
         </div>
-        <div className="mt-6 lgl:mt-14 w-full h-auto border-l-[6px] border-l-black border-opacity-30 flex flex-col gap-10">
+        <div className="mt-6 lgl:mt-14 w-full h-[1990px] border-l-[6px] border-l-black border-opacity-30 flex flex-col gap-10">
           <ResumeCard
             title={t("frontEndDeveloper")}
             subTitle={`Casacloud,Remote - (11-2022 - ${t('present')})`}
@@ -41,11 +41,11 @@ const Experience = () => {
               <h1>{t('3wagencyDesc.1')} <a style={{color:"red"}} href="https://coris.bank/" target="_blank">coris bank</a></h1>
               <br />
               <ul>
-                <li>{t('3wagencyDesc.2')}</li>
+                <li>- {t('3wagencyDesc.2')}</li>
                 <br />
-                <li>{t('3wagencyDesc.3')}</li>
+                <li>- {t('3wagencyDesc.3')}</li>
                 <br />
-                <li>{t('3wagencyDesc.4')}</li>
+                <li>- {t('3wagencyDesc.4')}</li>
                 <br />
               </ul>
             </div>}
@@ -54,7 +54,7 @@ const Experience = () => {
             title={t("frontEndDeveloper")}
             subTitle="Medteck Consulting - (02-2022 - 01-2023)"
             result={`${t('senegal')},Dakar`}
-            des={<h1>{t("medDesc")}  <a href="https://www.instagram.com/trytradeup/" target="_blank">Trytradeup.</a></h1>}
+            des={<h1>{t("medDesc")}  <a style={{color:"red"}} href="https://www.instagram.com/trytradeup/" target="_blank">Trytradeup.</a></h1>}
           />
           <ResumeCard
             title={t("web/mobileDeveloper")}
@@ -88,14 +88,13 @@ const Experience = () => {
         <div className="mt-6 lgl:mt-14 w-full h-[1000px] border-l-[6px] border-l-black border-opacity-30 flex flex-col gap-10">
           <ResumeCard
             title={t("webDeveloper")}
-            subTitle="Société africaine de facilitation (01-02-2020 - 01-08-2020)"
+            subTitle="Société africaine de facilitation (02-2020 - 08-2020)"
             result={`${t('senegal')},Dakar`}
-            des="Google's hiring process is an important part of our culture. Googlers care deeply about their teams and the people who make them up
-            Google's hiring process is an important part of our culture. Googlers care deeply about their teams and the people who make them up."
+            des={t("safDesc")}
           />
            <ResumeCard
             title={t("webDeveloper")}
-            subTitle="Volkeno,Dakar - (01-03-2019 - 01-08-2019)"
+            subTitle="Volkeno,Dakar - (03-2019 - 08-2019)"
             result={`${t('senegal')},Dakar`}
             des={<ul>
               <li>- {t('volkenoDesc.0')}</li>
