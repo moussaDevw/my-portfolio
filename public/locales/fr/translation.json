@@ -31,8 +31,13 @@
     "professionalSkills": "Compétences professionnelles",
     "experience": "Expérience",
     "jobExperience": "Expérience professionnelle",
+    "frontEndDeveloper": "Développeur Front-end",
+    "present": "Présent",
+    "senegal": "Sénégal",
+    "web/mobileDeveloper": "Développeur web/mobile",
     "internshipExperience": "Expérience de stage",
     "webDeveloper": "Développeur web",
+    "senagricultureDesc": ["Développer des outils web & logiciels permettant de faciliter les opérations en interne de l’entreprise.", "Participer à la conception du graphisme & design des supports technologiques à développer Gérer et maintenir le site web et l’application mobile", "Assurer le suivi de maintenance opérationnelle sur les applications développée.", "Etablir un premier diagnostic en cas d’anomalie.", "Lancer l’exécution des taches d’exploitation et contrôler leur déroulement.", "Assurer la gestion de l’application mobile.", "Utiliser et développer les web services.", "Réaliser et automatiser les procédures d’exploitation de gestion et réaliser les interfaces graphiques."],
     "achievements": "Réalisations",
     "contactWithMe": "Contactez-moi",
     "footer": {
