@@ -17,7 +17,7 @@ const Navbar = () => {
   return (
     <div className="w-full h-24 sticky top-0 z-50 bg-bodyColor mx-auto flex justify-between items-center font-titleFont border-b-[1px] border-b-gray-600">
       <div>
-        <img src={logo} alt="logo" />
+        <img src={"/"} alt="logo" />
       </div>
       <div>
           {
@@ -67,9 +67,7 @@ const Navbar = () => {
               <div>
                 <img className="w-32" src={logo} alt="logo" />
                 <p className="text-sm text-gray-400 mt-2">
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                  Earum soluta perspiciatis molestias enim cum repellat, magnam
-                  exercitationem distinctio aliquid nam.
+                  {t('textKind')}
                 </p>
               </div>
               <ul className="flex flex-col gap-4">
@@ -87,7 +85,7 @@ const Navbar = () => {
                       offset={-70}
                       duration={500}
                     >
-                      {item.title}
+                      {t(item.title)}
                     </Link>
                   </li>
                 ))}

@@ -8,7 +8,6 @@ const Contact = () => {
   const { t } = useTranslation()
 
   const [username, setUsername] = useState("");
-  const [phoneNumber, setPhoneNumber] = useState("");
   const [email, setEmail] = useState("");
   const [subject, setSubject] = useState("");
   const [message, setMessage] = useState("");
@@ -27,8 +26,6 @@ const Contact = () => {
     e.preventDefault();
     if (username === "") {
       setErrMsg("Username is required!");
-    } else if (phoneNumber === "") {
-      setErrMsg("Phone number is required!");
     } else if (email === "") {
       setErrMsg("Please give your Email!");
     } else if (!emailValidation(email)) {
@@ -38,12 +35,32 @@ const Contact = () => {
     } else if (message === "") {
       setErrMsg("Message is required!");
     } else {
-      setSuccessMsg(
-        `Thank you dear ${username}, Your Messages has been sent Successfully!`
-      );
+      let data = {
+        username,
+        email,
+        subject,
+        message
+      }
+      fetch('/api/contact', {
+        method: 'POST',
+        headers: {
+          'Accept': 'application/json, text/plain, */*',
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(data)
+      }).then((res) => {
+        console.log('Response received')
+        if(res.status === 200){
+          console.log('Response succeeded!')
+          setSuccessMsg(
+            `Thank you dear ${username}, Your Messages has been sent Successfully!`
+          );
+          
+        }
+      })
+     
       setErrMsg("");
       setUsername("");
-      setPhoneNumber("");
       setEmail("");
       setSubject("");
       setMessage("");
@@ -72,35 +89,19 @@ const Contact = () => {
                   {successMsg}
                 </p>
               )}
-              <div className="w-full flex flex-col lgl:flex-row gap-10">
-                <div className="w-full lgl:w-1/2 flex flex-col gap-4">
-                  <p className="text-sm text-gray-400 uppercase tracking-wide">
-                    Your name
-                  </p>
-                  <input
-                    onChange={(e) => setUsername(e.target.value)}
-                    value={username}
-                    className={`${
-                      errMsg === "Username is required!" &&
-                      "outline-designColor"
-                    } contactInput`}
-                    type="text"
-                  />
-                </div>
-                <div className="w-full lgl:w-1/2 flex flex-col gap-4">
-                  <p className="text-sm text-gray-400 uppercase tracking-wide">
-                    Phone Number
-                  </p>
-                  <input
-                    onChange={(e) => setPhoneNumber(e.target.value)}
-                    value={phoneNumber}
-                    className={`${
-                      errMsg === "Phone number is required!" &&
-                      "outline-designColor"
-                    } contactInput`}
-                    type="text"
-                  />
-                </div>
+              <div className="flex flex-col gap-4">
+                <p className="text-sm text-gray-400 uppercase tracking-wide">
+                  {t('username')}
+                </p>
+                <input
+                  onChange={(e) => setEmail(e.target.value)}
+                  value={email}
+                  className={`${
+                    errMsg === "Please give your Email!" &&
+                    "outline-designColor"
+                  } contactInput`}
+                  type="email"
+                />
               </div>
               <div className="flex flex-col gap-4">
                 <p className="text-sm text-gray-400 uppercase tracking-wide">
@@ -118,7 +119,7 @@ const Contact = () => {
               </div>
               <div className="flex flex-col gap-4">
                 <p className="text-sm text-gray-400 uppercase tracking-wide">
-                  Subject
+                  {t('subject')}
                 </p>
                 <input
                   onChange={(e) => setSubject(e.target.value)}
@@ -147,9 +148,11 @@ const Contact = () => {
               <div className="w-full">
                 <button
                   onClick={handleSend}
+                  disabled
                   className="w-full h-12 bg-[#141518] rounded-lg text-base text-gray-400 tracking-wider uppercase hover:text-white duration-300 hover:border-[1px] hover:border-designColor border-transparent"
                 >
-                  Send Message
+                  
+                {t('commingSoon')}
                 </button>
               </div>
               {errMsg && (

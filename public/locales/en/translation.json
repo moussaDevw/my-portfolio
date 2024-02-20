@@ -46,6 +46,10 @@
   "online": "Online",
   "achievements": "Achievements",
   "contactWithMe": "Contact With Me",
+  "username": "USERNAME",
+  "subject": "Subject",
+  "commingSoon": "I'm not available at the moment, just give me a few days.",
+  "textKind": "Committed to technical excellence and impeccable customer service, I strive to exceed expectations on every project.",
   "footer": {
     "date": "Today is {{date, DATE_HUGE}}",
     "date_morning": "Good morning! Today is {{date, DATE_HUGE}} | Have a nice day!",

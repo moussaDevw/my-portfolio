@@ -49,6 +49,10 @@
     "selfTaught": "Autodidacte",
     "online": "En Ligne",
     "contactWithMe": "Contactez-moi",
+    "username": "NOM D'UTILISATEUR",
+    "subject": "Sujet",
+    "commingSoon": "Je suis indisponible pour le moment, donnez-moi quelques jours.",
+    "textKind": "Engagé à offrir une excellence technique et un service client irréprochable, je m'efforce de surpasser les attentes dans chaque projet.",
     "footer": {
       "date_morning": "Bonjour ! Aujourd'hui, c'est {{date, DATE_HUGE}} | Bonne journée !",
       "date_afternoon": "Bon après-midi! Aujourd'hui, c'est {{date, DATE_HUGE}}",

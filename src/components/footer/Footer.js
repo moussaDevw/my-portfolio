@@ -45,7 +45,7 @@ const Footer = () => {
         <ul className="flex flex-col gap-4 font-titleFont font-medium py-6 overflow-hidden">
           {
             navLinksdata.map(({ _id, title, link }) => (
-              <li id={_id}>
+              <li key={_id}>
               <span className="w-full text-lg relative hover:text-designColor duration-300 group cursor-pointer">
               <Link
                 activeClass="active"

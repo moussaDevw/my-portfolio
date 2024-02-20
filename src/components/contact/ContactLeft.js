@@ -20,8 +20,7 @@ const ContactLeft = () => {
           {t('fullStackDeveloper')}
         </p>
         <p className="text-base text-gray-400 tracking-wide">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis
-          ipsam autem cumque, accusantium dicta odio.
+          {t('textKind')}
         </p>
         <p className="text-base text-gray-400 flex items-center gap-2">
           Phone: <span className="text-lightText">+221 780105426</span>
