@@ -1,0 +1,11 @@
+.time{
+    width: 480px !important;
+    height: 480px !important;
+}
+
+@media only screen and (max-width: 1023px) {
+    .time {
+        width: 290px !important;
+        height: 290px !important;
+    }
+}

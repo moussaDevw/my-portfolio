@@ -2,12 +2,14 @@ import React from 'react'
 import { bannerImg } from "../../assets/index";
 import profileBanner from '../../assets/images/myBanner.jpeg';
 import ClockApp from '../clock/Clock';
+import './styles.css'
+
 const RightBanner = () => {
   return (
     <div className="w-full lgl:w-1/2 flex justify-center items-center relative">
-      <div className='z-10'>
+      <div className='relative z-10'>
 
-      <ClockApp />
+      <ClockApp className="time" />
       </div>
       
       {/* <img

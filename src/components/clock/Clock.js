@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import Clock from 'react-clock';
 import 'react-clock/dist/Clock.css';
 
-const ClockApp = () => {
+const ClockApp = ({ className }) => {
   const [value, setValue] = useState(new Date());
 
   useEffect(() => {
@@ -15,7 +15,7 @@ const ClockApp = () => {
 
   return (
     <div>
-      <Clock size={400} value={value} />
+      <Clock className={className} locale="hu-HU" value={value} />
     </div>
   );
 }
