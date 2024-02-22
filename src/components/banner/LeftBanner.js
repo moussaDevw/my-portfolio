@@ -1,6 +1,6 @@
 import React from 'react'
 import { useTypewriter, Cursor } from "react-simple-typewriter";
-import { FaFacebookF, FaTwitter, FaLinkedinIn, FaReact } from "react-icons/fa";
+import { FaFacebookF, FaTwitter, FaLinkedinIn, FaReact, FaInstagram } from "react-icons/fa";
 import { SiTailwindcss, SiFigma, SiNextdotjs, SiHashnode, SiExpress, SiNestjs } from "react-icons/si";
 import { Trans, useTranslation } from 'react-i18next';
 
@@ -41,16 +41,20 @@ const LeftBanner = () => {
             {t('findMeIn')}
           </h2>
           <div className="flex gap-4">
-            <span className="bannerIcon">
-              <FaFacebookF />
-            </span>
-            <span className="bannerIcon">
-              <FaTwitter />
-            </span>
-            <span className="bannerIcon">
-              <FaLinkedinIn />
-            </span>
-          </div>
+          <a href='https://www.instagram.com/musadiagne/' target='_blank'>
+          <span className="bannerIcon">
+            <FaInstagram />
+          </span>
+          </a>
+          <a href='https://twitter.com/musa_diagnee' target='_blank'>
+          <span className="bannerIcon">
+            <FaTwitter />
+          </span>
+          </a>
+          <a href='https://www.linkedin.com/in/moussa-diagne-b81226107/' target='_blank' className="bannerIcon">
+            <FaLinkedinIn href='https://www.linkedin.com/in/moussa-diagne-b81226107/' target='_blank' />
+          </a>
+        </div>
         </div>
         <div>
           <h2 className="text-base uppercase font-titleFont mb-4">
