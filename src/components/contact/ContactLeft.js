@@ -1,6 +1,6 @@
 import React from 'react'
 import { FaFacebookF, FaTwitter, FaLinkedinIn } from "react-icons/fa";
-import { contactImg } from "../../assets/index";
+import contactImg from "../../assets/images/contact/contactImgm.jpg";
 import { useTranslation } from 'react-i18next';
 
 const ContactLeft = () => {

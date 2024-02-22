@@ -8,6 +8,7 @@ import french from '../../assets/images/lng/france.png'
 import english from '../../assets/images/lng/united-states.png'
 import { navLinksdata } from '../../constants';
 import { useTranslation } from 'react-i18next';
+import tag from '../../assets/images/tag.jpg'
 
 const Navbar = () => {
   const { i18n } = useTranslation();
@@ -17,21 +18,11 @@ const Navbar = () => {
   return (
     <div className="w-full h-24 sticky top-0 z-50 bg-bodyColor mx-auto flex justify-between items-center font-titleFont border-b-[1px] border-b-gray-600">
       <div>
-        <img src={"/"} alt="logo" />
+        <figure>
+        <img src={tag} alt="logo"  className='max-w-10' />
+        </figure>
       </div>
-      <div>
-          {
-          // Object.keys(lngs).map((lng) => (
-          //   <button key={lng} style={{ fontWeight: i18n.resolvedLanguage === lng ? 'bold' : 'normal' }} type="submit" onClick={() => i18n.changeLanguage(lng)}>
-          //     {/* {lngs[lng].nativeName} */}
-              
-          //     {console.log(i18n.resolvedLanguage)}
-          //   </button>
-          // ))
-          }
-          {i18n.resolvedLanguage === 'fr' ? <img src={french} alt="Langue Français" height={20} width={20} style={{cursor:'pointer'}} onClick={() => i18n.changeLanguage('en')} /> : <img src={english} alt='Langue of english' height={20} width={20} style={{cursor:'pointer'}} onClick={() => i18n.changeLanguage('fr')} />}
-        </div>
-        {/* <a href="https://www.flaticon.com/free-icons/united-states" title="united states icons">United states icons created by Freepik - Flaticon</a> */}
+       
       <div>
         {/* <Trans i18nKey="description.part1">
             Edit <code>src/App.js</code> and save to reload.
@@ -54,6 +45,10 @@ const Navbar = () => {
               </Link>
             </li>
           ))}
+          <div>
+         
+         {i18n.resolvedLanguage === 'fr' ? <img src={french} alt="Langue Français" height={20} width={20} style={{cursor:'pointer'}} onClick={() => i18n.changeLanguage('en')} /> : <img src={english} alt='Langue of english' height={20} width={20} style={{cursor:'pointer'}} onClick={() => i18n.changeLanguage('fr')} />}
+       </div>
         </ul>
         <span
           onClick={() => setShowMenu(!showMenu)}
@@ -89,6 +84,10 @@ const Navbar = () => {
                     </Link>
                   </li>
                 ))}
+                <div>
+         
+         {i18n.resolvedLanguage === 'fr' ? <img src={french} alt="Langue Français" height={20} width={20} style={{cursor:'pointer'}} onClick={() => i18n.changeLanguage('en')} /> : <img src={english} alt='Langue of english' height={20} width={20} style={{cursor:'pointer'}} onClick={() => i18n.changeLanguage('fr')} />}
+       </div>
               </ul>
               <div className="flex flex-col gap-4">
                 <h2 className="text-base uppercase font-titleFont mb-4">

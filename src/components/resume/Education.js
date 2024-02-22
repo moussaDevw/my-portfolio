@@ -24,7 +24,7 @@ const Education = () => {
             title={t('levelStudent')}
             subTitle="Univers Professionnel(Unipro) (2018 - 2021)"
             result={`${t('senegal')},Dakar`}
-            des="...."
+            des=""
           />
           {/* <ResumeCard
             title="AS - Science & Information"
@@ -47,30 +47,53 @@ const Education = () => {
           <p className="text-sm text-designColor tracking-[4px]">2018 - {t('present')}</p>
           <h2 className="text-3xl md:text-4xl font-bold">{t('selfTaught')}</h2>
         </div>
-        <div className="mt-6 lgl:mt-14 w-full h-[1000px] border-l-[6px] border-l-black border-opacity-30 flex flex-col gap-10">
+        <div className="mt-6 lgl:mt-14 w-full h-[1000px] w-[100%] border-l-[6px] border-l-black border-opacity-30 flex flex-col gap-10">
           <ResumeCard
             title={<a href="https://www.educative.io/" target="_blank">Educative.io</a>}
             // subTitle="Google Out Tech - (2017 - Present)"
             result={t("online")}
-            des="Google's hiring process is an important part of our culture. Googlers care deeply about their teams and the people who make them up."
+            des={<ul>
+              <li>Architect Aws</li>
+              <li>Docker</li>
+              <li>kubernetes</li>
+              <li>React.js</li>
+              <li>Next.js</li>
+              <li>TDD</li>
+            </ul>}
           />
           <ResumeCard
             title={<a href="https://www.codecademy.com/learn" target="_blank">Codecademy</a>}
             // subTitle="Apple Developer Team - (2012 - 2016)"
             result={t("online")}
-            des="A popular destination with a growing number of highly qualified homegrown graduates, it's true that securing a role in Malaysia isn't easy."
+            des={
+              <ul>
+                <li>React.js</li>
+                <li>Express.js</li>
+                <li>Node.js</li>
+                <li>Postgres</li>
+              </ul>
+            }
           />
           <ResumeCard
             title={<a href="https://openclassrooms.com/" target="_blank">Openclassrooms</a>}
             // subTitle="Nike - (2020 - 2011)"
             result={t("online")}
-            des="The Oman economy has grown strongly over recent years, having transformed itself from a producer and innovation-based economy."
+            des={
+              <ul>
+                <li>Html5</li>
+                <li>Css3</li>
+                <li>JavaScript</li>
+                <li>UML</li>
+              </ul>
+            }
           />
            <ResumeCard
             title={<a href="https://www.coursera.org/" target="_blank">Coursera</a>}
             // subTitle="Nike - (2020 - 2011)"
             result={t("online")}
-            des="The Oman economy has grown strongly over recent years, having transformed itself from a producer and innovation-based economy."
+            des={<ul>
+              <li>Blockchain</li>
+            </ul>}
           />
         </div>
       </div>
