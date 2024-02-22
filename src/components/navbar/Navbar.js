@@ -2,8 +2,8 @@ import React, { useState } from 'react'
 import { Link } from "react-scroll";
 import { FiMenu } from "react-icons/fi";
 import { MdClose } from "react-icons/md";
-import { FaFacebookF, FaTwitter, FaLinkedinIn } from "react-icons/fa";
-import {logo} from "../../assets/index"
+import { FaFacebookF, FaTwitter, FaLinkedinIn, FaInstagram } from "react-icons/fa";
+import taggmobile from '../../assets/images/taggmobile.jpg'
 import french from '../../assets/images/lng/france.png'
 import english from '../../assets/images/lng/united-states.png'
 import { navLinksdata } from '../../constants';
@@ -60,7 +60,7 @@ const Navbar = () => {
           <div className="w-[80%] h-screen overflow-scroll absolute top-0 left-0 bg-gray-900 p-4 scrollbar-hide">
             <div className="flex flex-col gap-8 py-2 relative">
               <div>
-                <img className="w-32" src={logo} alt="logo" />
+                <img src={taggmobile} alt="logo"  className='max-w-10' />
                 <p className="text-sm text-gray-400 mt-2">
                   {t('textKind')}
                 </p>
@@ -90,21 +90,23 @@ const Navbar = () => {
        </div>
               </ul>
               <div className="flex flex-col gap-4">
-                <h2 className="text-base uppercase font-titleFont mb-4">
-                  {t('findMeIn')}
-                </h2>
-                <div className="flex gap-4">
-                  <span className="bannerIcon">
-                    <FaFacebookF />
-                  </span>
-                  <span className="bannerIcon">
-                    <FaTwitter />
-                  </span>
-                  <span className="bannerIcon">
-                    <FaLinkedinIn />
-                  </span>
-                </div>
-              </div>
+        <h2 className="text-base uppercase font-titleFont mb-4">{t('findMeIn')}</h2>
+        <div className="flex gap-4">
+          <a href='https://www.instagram.com/musadiagne/' target='_blank'>
+          <span className="bannerIcon">
+            <FaInstagram />
+          </span>
+          </a>
+          <a href='https://twitter.com/musa_diagnee' target='_blank'>
+          <span className="bannerIcon">
+            <FaTwitter />
+          </span>
+          </a>
+          <a href='https://www.linkedin.com/in/moussa-diagne-b81226107/' target='_blank' className="bannerIcon">
+            <FaLinkedinIn href='https://www.linkedin.com/in/moussa-diagne-b81226107/' target='_blank' />
+          </a>
+        </div>
+      </div>
               <span
                 onClick={() => setShowMenu(false)}
                 className="absolute top-4 right-4 text-gray-400 hover:text-designColor duration-300 text-2xl cursor-pointer"

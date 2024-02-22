@@ -20,7 +20,7 @@ const Resume = () => {
         <Title title={t('7+yearsOfExperience')} des={t('myResume')} />
       </div>
       <div>
-        <ul className="w-full grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4">
+        <ul className="w-full grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3">
           <li
             onClick={() =>
               setEducationData(true) &
@@ -53,8 +53,8 @@ const Resume = () => {
             onClick={() =>
               setEducationData(false) &
               setSkillData(false) &
-              setExperienceData(true) &
-              setAchievementData(false)
+              setExperienceData(true) 
+              // setAchievementData(false)
             }
             className={`${
               experienceData
@@ -83,7 +83,7 @@ const Resume = () => {
       </div>
       {educationData && <Education />}
       {skillData && <Skills />}
-      {achievementData && <Achievement />}
+      {/* {achievementData && <Achievement />} */}
       {experienceData && <Experience />}
  
     </section>

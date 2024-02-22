@@ -1,5 +1,5 @@
 import React from 'react'
-import { FaFacebookF, FaTwitter, FaLinkedinIn } from "react-icons/fa";
+import { FaFacebookF, FaTwitter, FaLinkedinIn, FaInstagram } from "react-icons/fa";
 import contactImg from "../../assets/images/contact/contactImgm.jpg";
 import { useTranslation } from 'react-i18next';
 
@@ -32,15 +32,19 @@ const ContactLeft = () => {
       <div className="flex flex-col gap-4">
         <h2 className="text-base uppercase font-titleFont mb-4">{t('findMeIn')}</h2>
         <div className="flex gap-4">
+          <a href='https://www.instagram.com/musadiagne/' target='_blank'>
           <span className="bannerIcon">
-            <FaFacebookF />
+            <FaInstagram />
           </span>
+          </a>
+          <a href='https://twitter.com/musa_diagnee' target='_blank'>
           <span className="bannerIcon">
             <FaTwitter />
           </span>
-          <span className="bannerIcon">
-            <FaLinkedinIn />
-          </span>
+          </a>
+          <a href='https://www.linkedin.com/in/moussa-diagne-b81226107/' target='_blank' className="bannerIcon">
+            <FaLinkedinIn href='https://www.linkedin.com/in/moussa-diagne-b81226107/' target='_blank' />
+          </a>
         </div>
       </div>
     </div>
